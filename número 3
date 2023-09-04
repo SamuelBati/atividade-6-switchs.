@@ -1,0 +1,88 @@
+#include<stdio.h>
+main(){
+
+  int codprato, codsobremesa, codsuco, caloriastotais;
+
+  printf("----------Menu----------");
+
+  printf("\nPratos: 1-vegetarino \n\t\t\t 2-peixe \n\t\t\t 3-frango \n\t\t\t 4-carne \n");
+  
+  printf("Digite o codigo do prato");
+  scanf("%d", &codprato);
+
+  switch(codprato){
+    case 1:
+      caloriastotais= 180;
+    break;
+
+    case 2:
+      caloriastotais= 230;
+    break;
+
+    case 3:
+      caloriastotais= 250;
+    break;
+
+    case 4:
+      caloriastotais= 350;
+    break;
+
+    default:
+      printf("Codigo invalido");
+  }
+
+  printf("\nSobremesas: 1-Abacaxi \n\t\t\t 2-sorvete diet \n\t\t\t 3-mouse diet \n\t\t\t 4-mouse de chocolate\n");
+
+  printf("Digite o codigo da sobremesa");
+  scanf("%d", &codsobremesa);
+
+   switch(codsobremesa){
+    case 1:
+      caloriastotais+= 75;
+    break;
+
+    case 2:
+      caloriastotais+= 110;
+    break;
+
+    case 3:
+      caloriastotais+= 170;
+    break;
+
+    case 4:
+      caloriastotais+= 200;
+    break;
+
+    default:
+      printf("Codigo invalido");
+   }
+
+   printf("\nBebidas: 1-cha \n\t\t\t 2-suco de laranja \n\t\t\t 3-suco de melao \n\t\t\t 4-refrigerante diet \n");
+
+   printf("Digite o codigo da bebida");
+   scanf("%d", &codsuco);
+
+    switch(codsuco){
+    case 1:
+      caloriastotais+= 20;
+    break;
+
+    case 2:
+      caloriastotais+= 70;
+    break;
+
+    case 3:
+      caloriastotais+= 100;
+    break;
+
+    case 4:
+      caloriastotais+= 65;
+    break;
+
+    default:
+      printf("Codigo invalido");
+   }
+
+  printf("O total de calorias ingeridas na sua refeicao sao %d:" caloriastotais);
+
+}
