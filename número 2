@@ -1,0 +1,34 @@
+#include<stdio.h>
+main(){
+
+  float codigo, valor;
+
+  printf("----------Menu----------");
+
+  printf("\n\t\t\t 100-Cachorro Quente\n\t\t\t 101-Bauru Simples\n\t\t\t 102-Bauru com ovo\n\t\t\t 103-Hamburguer\n\t\t\t 104-Cheeseburguer");
+
+  printf("Digite o codigo do prato");
+  scanf("%f", &codigo);
+
+  switch(codigo){
+    case 100:
+      valor=10.10;
+    break;
+
+    case 101:
+      valor=8.30;
+    break;
+
+    case 102:
+      valor=8.50;
+    break;
+
+    case 103:
+      valor=12.50;
+    break;
+
+    case 104:
+      valor=13.25;
+  }
+
+}
